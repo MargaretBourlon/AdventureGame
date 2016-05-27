@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Can you survive?</title>
+</head>
+<body>
+  <p>Have you ever wondered if you would survive a horror story? Click START to find out!</p>
+  <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene1")'>START</button>
+
+  <div id='scene1' style='display:none'>
+    <p>You and four friends are driving cross country. It is the middle of the night and your car breaks down in the middle of nowhere. There is a house
+      up the road, the first building you all have seen in hours. You decide to go ask for help. Do you leave people to watch the car, or do you all go to the house together?</P>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene2A")'>You decide to split up.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene2B")'>You decide to stick together.</button>
+  </div>
+
+  <div id='scene2A' style='display:none'>
+    <p>Since it was your idea, you stay at the car, along with on of your friends.</p>
+  </div>
+
+  <div id='scene2B' style='display:none'>
+    <p>You lock up the car and everyone walks toward the house together.</p>
+  </div>
+
+  <script src='AdventureGame.js'></script>
+</body>
+</html>
