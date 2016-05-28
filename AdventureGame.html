@@ -14,11 +14,25 @@
   </div>
 
   <div id='scene2A' style='display:none'>
-    <p>Since it was your idea, you stay at the car, along with on of your friends.</p>
+    <p>Since it was your idea, you stay at the car, along with on of your friends. You settle down to wait, keeping one eye out for anyone driving by.</p>
+    <p>Before too long you hear an old truck drive up and slowly stop. A man gets out and walks toward your car</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene3A")'>You get out of the car and talk to him.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='switchScene("scene2A", "scene2B")'>You get out of the car and head toward the house.</button>
   </div>
 
+  <div id='scene3A' style='display:none'>
+    <p>He says he lives in the house that your friends headed towards. He also says that he has the tools to fix your car in his garage.</p>
+    <p>He offers to go get the tools and asks if you'd like to ride with him to his house.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death1")'>You decide to go with him.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene3B")'>You decide to stay with the car.</button>
+  </div>
+
+  <div id="death1" style="display:none">
+    <p>He was obviosly a pshycho killer. You are never seen or heard from again.</p>
+    <p>You lose. The end.</p>
+
   <div id='scene2B' style='display:none'>
-    <p>You lock up the car and everyone walks toward the house together.</p>
+    <p>You lock up the car and walk toward the house.</p>
   </div>
 
   <script src='AdventureGame.js'></script>
