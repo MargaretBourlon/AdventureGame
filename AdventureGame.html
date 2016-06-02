@@ -1,40 +1,48 @@
 <html>
 <head>
   <title>Can you survive?</title>
+  <script src='AdventureGame.js' type='text/javascript'></script>
+  <link href="AdventureGame.css" type='text/css' rel='stylesheet' />
 </head>
 <body>
   <p>Have you ever wondered if you would survive a horror story? Click START to find out!</p>
   <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene1")'>START</button>
 
-  <div id='scene1' style='display:none'>
+  <div id='scene1'>
     <p>You and four friends are driving cross country. It is the middle of the night and your car breaks down in the middle of nowhere. There is a house
       up the road, the first building you all have seen in hours. You decide to go ask for help. Do you leave people to watch the car, or do you all go to the house together?</P>
     <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene2A")'>You decide to split up.</button>
     <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene2B")'>You decide to stick together.</button>
   </div>
 
-  <div id='scene2A' style='display:none'>
+  <div id='scene2A'>
     <p>Since it was your idea, you stay at the car, along with on of your friends. You settle down to wait, keeping one eye out for anyone driving by.</p>
     <p>Before too long you hear an old truck drive up and slowly stop. A man gets out and walks toward your car</p>
     <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene3A")'>You get out of the car and talk to him.</button>
     <button type="button" class='btn btn-success btn-lg' onclick='switchScene("scene2A", "scene2B")'>You get out of the car and head toward the house.</button>
   </div>
 
-  <div id='scene3A' style='display:none'>
+  <div id='scene3A'>
     <p>He says he lives in the house that your friends headed towards. He also says that he has the tools to fix your car in his garage.</p>
     <p>He offers to go get the tools and asks if you'd like to ride with him to his house.</p>
     <button type="button" class='btn btn-success btn-lg' onclick='showNext("death1")'>You decide to go with him.</button>
-    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene3B")'>You decide to stay with the car.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death2")'>You decide to stay with the car.</button>
   </div>
 
-  <div id="death1" style="display:none">
+  <div id="death1">
     <p>He was obviosly a pshycho killer. You are never seen or heard from again.</p>
     <p>You lose. The end.</p>
+  </div>
 
-  <div id='scene2B' style='display:none'>
+  <div id='scene2B'>
     <p>You lock up the car and walk toward the house.</p>
   </div>
 
-  <script src='AdventureGame.js'></script>
+  <div id='death2'>
+    <p>Hours later the man comes back. He has a crazy look in his eye and is holding some kind of machete. He runs toward you, swinging the weapon, and you run away as fast as humanly possible.</p>
+    <p>You get away, but are lost in the middle of nowhere without food, water, or celluar service. You are never seen again.</p>
+    <p>You lose. The end.</p>
+  </div>
+
 </body>
 </html>
