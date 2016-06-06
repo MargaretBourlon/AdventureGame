@@ -38,6 +38,8 @@
     <p>You lock up the car and walk toward the house.</p>
     <p>You ring the doorbell, but no one answers.</p>
     <p>You notice the door is unlocked.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene4A")'>You enter the house, looking for a landline.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene4B")'>You wait on the porch, hoping the owner will appear.</button>
   </div>
 
   <div id='death2'>
@@ -45,6 +47,133 @@
     <p>You get away, but are lost in the middle of nowhere without food, water, or celluar service. You are never seen again.</p>
     <p>You lose. The end.</p>
   </div>
+
+  <div id='scene4A'>
+    <p>You push the door open and find yourself in an old fashioned farm house, with no phone in sight. You start exploring.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene5A")'>You head up the stairs.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene5B")'>You explore the main floor.</button>
+  </div>
+
+  <div id='scene5A'>
+    <p>You creep up the stairs, giving each room a cursory glance, looking for a phone line.</p>
+    <p>In what looks like the master bedroom you see a cord going into a cabinet. You open the cabinet and find a well-maintained collection of knives and some bloody clothes</p>
+    <p>Just then you hear a car pull up to the house and shut off.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death3")'>You go investigate the sound.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene6A")'>You stay where you are.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene6B")'>You hide.</button>
+  </div>
+
+  <div id='scene5B'>
+    <p>You wander around the downstairs of the farm house. The only weird thing you notice is that there are no phones.</p>
+    <p>Just then you hear a car pull up to the house and shut off.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death3")'>You go investigate the sound.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death4")'>You stay where you are.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene6B")'>You hide.</button>
+  </div>
+
+  <div id='death3'>
+    <p>You find the makeshift garage behind the house. You see a man inside and enter to ask him for help.</p>
+    <p>He turns around and you see the knife he was hiding. You try to run, but have no where to go. You manage a scream to warn your friends before he gets you.</p>
+    <p>You lose. The end.</p>
+  </div>
+
+  <div id='scene6A'>
+    <p>You idle in the bedroom, staring at the knives and trying to decide what to say to the owner when they find you.</p>
+    <p>You hear one of your friends, who was searching the downstairs, scream once. You don't hear anything else.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death5")'>You go looking for your friend.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene7A")'>You hide.</button>
+  </div>
+
+  <div id='scene6B'>
+    <p>You find a closet underneath the stair case to hide in. You hear the owner of the house come inside the house.</p>
+    <p>You hear one of your friends, who was searching the downstairs, scream once. You don't hear anything else.</p>
+    <p>Soon you hear water running. Maybe he's in the shower?</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death6")'>You go see if he has a cell phone.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene7B")'>You stay where you are.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death6")'>You head toward the garage.</button>
+  </div>
+
+  <div id='death4'>
+    <p>The owner comes into the house and finds you in his living room. He pauses, suprized to see you, before pulling out a knife and running toward you.</p>
+    <p>You manage a scream to warn your friends before he gets you.</p>
+    <p>You lose. The end.</p>
+  </div>
+
+  <div id='death5'>
+    <p>You walk out of the bedroom and straight into the owner</p>
+    <p>He was looking for more people after finding someone downstairs. You don't even have time to scream</p>
+    <p>You lose. The end</p>
+  </div>
+
+  <div id='scene7A'>
+    <p>You look around frantically and end up hiding under the bed.</p>
+    <p>You watch from under the bed as the owner of the house comes into the room. His feet move from the door to the bathroom, where you hear water running.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death6")'>You make a run for it.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene8A")'>You stay under the bed.</button>
+  </div>
+
+  <div id='death6'>
+    <p>You creep out of your hiding place and run straight into the owner</p>
+    <p>He was looking for more people after finding someone downstairs. You don't even have time to scream</p>
+    <p>You lose. The end</p>
+  </div>
+
+  <div id='scene7B'>
+    <p>You hear what sounds like one of your friends creeping out of their hiding spot. Then you hear them scream.</p>
+    <p>There's running, followed by a dull thud. Footsteps head back up the stairs. You wait for ages, but don't hear anything else.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("escape1")'>You head for the garage.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene8B")'>You head to the upstairs bedroom.</button>
+  </div>
+
+  <div id='scene8A'>
+    <p>Seconds later, you see the feet emerge from the bathroom and go back to the hallway.</p>
+    <p>You hear one of your friends scream. There's running, followed by a dull thud. Footsteps head back up the stairs. You wait for ages, but don't hear anything else.</p>
+    <p>After ages of waiting for more intruders to come out, the owner finally goes to bed. You wait until he has been snoring for a long time before you move.</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene8B")'>You head for the garage.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("scene9A")'>You help yourself to a knife from the cabinet.</button>
+  </div>
+
+  <div id='escape1'>
+    <p>You make it to the garage and steal the car. You don't know if any of your friends are still alive, but you aren't waiting around to find out.</p>
+    <p>You promise yourself you'll send the police to the house as soon as you can.</p>
+    <p>Congratulations, you survived.</p>
+  </div>
+
+  <div id='scene8B'>
+    <p>The door is shut but the snoring you hear makes you confident enough to push the door open.</p>
+    <p>Unfortnatly the door squeaks and wakes him up. He grabs the knife from his nightstand and runs at you</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("death7")'>You turn and run.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("escape2")'>You run toward the open knife cabinet.</button>
+  </div>
+
+  <div id='scene9A'>
+    <p>Knife in hand, you stare at the man lying in his bed</p>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("escape3")'>You head for the garage.</button>
+    <button type="button" class='btn btn-success btn-lg' onclick='showNext("killer")'>You stab the sleeping man.</button>
+  </div>
+
+  <div id='death7'>
+    <p>He catches up to you easily</p>
+    <p>You lose. The end.</p>
+  </div>
+
+  <div id='escape2'>
+    <p>You two fight franitcally, and during the struggle you manage to stab him.</p>
+    <p>Congratulations, you survived</p>
+
+  <div id='escape3'>
+    <p>When you pull the door open, the hinges squeak and the man wakes up.</p>
+    <p>He grabs a knife and runs at you. You two fight franitcally, and during the struggle you manage to stab him.</p>
+    <p>Congratulations, you survived</p>
+  </div>
+
+  <div id='killer'>
+    <p>The man dies without waking up. You smile as you consider all the hard work that went into planning this trap for your "friends." But you did it.</p>
+    <p>You killed some yourself, and designed traps for the others. You sabatouged the car and picked this house in the middle of nowhere for the main event.</p>
+    <p>You knew the owner would have to die but, oh well, right? It was worth it.</p>
+    <p>You steal his car (it's not like he'll need it anymore) and drive off. By the time anyone finds the bodies, you're long gone.</p>
+  </div>
+
 
 </body>
 </html>
