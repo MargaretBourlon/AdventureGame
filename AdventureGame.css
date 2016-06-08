@@ -1,3 +1,21 @@
 div {
   display: none
 }
+p {
+  font-size: 22px
+}
+button {
+  margin: 5px;
+  background-color: #ccddff
+}
+.death {
+  color: #800000;
+  font-family: impact;
+  font-size: 30px
+}
+.survive {
+  color: #008080;
+  font-family: "Lucida Console";
+  font-weight: bold;
+  font-style: 40px
+}
